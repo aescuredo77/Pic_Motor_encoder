@@ -1,6 +1,5 @@
 # Pic_Motor_encoder
-The  I2C ServoMotor can serve different purposes, for example, like servo that we need positioning and hold, while the diffrobot we are interested in speed. For this reason and everything that the program is going to be very similar we will have to make different versions. 
-
+The  I2C ServoMotor can serve different purposes, for example, like servo that we need positioning and hold, while the diffrobot we are interested in speed. 
 
 ![](./Electronics/pictures/detail_servo_00.png)
  
