@@ -1,6 +1,6 @@
 # Pic_Motor_encoder
 I2C controlled servo
-![](./aescuredo77/roseco/tree/main/Electronics/pictures/detail_servo_00.png)
+![](./Electronics/pictures/detail_servo_00.png)
  
  **ServoMotor detail of the interior circuit** 
  
@@ -13,8 +13,19 @@ The microcontroller communicates through I2C, which allows us to connect 127 nod
 
 The I2c address will depend on the application that we are going to make, it should not be a problem to change it depending on the needs, but we are going to give a few premises. The I2C addresses are defined by 7 bits, the least significant bit tells us if it is writing or reading, so we will give a couple of addresses, the first is the one recorded in the pic, and the other is the one we will use in the Arduino / teensy to communicate. Always in Hexadecinal.
 
-- Servomotor right 0x20 --> 0x10
-- Servomotor left 0x22 --> 0x11
+
+| Name            | Mode     | address | address Arduino |
+| --------------- | -------- | --------| ----------------|
+|Servo_Motor_Left |   speed  |   0x22  |       0x11      |
+|Servo_Motor_Rigt |   speed  |   0x20  |       0x10      |
+|Gripper          | position |   0x10  |       0x08      |
+|Servo_base       | position |   0x30  |       0x18      |
+|Servo_left       | position |   0x32  |       0x19      |
+|Servo_right      | position |   0x34  |       0x1A      |
+
+
+The 12 pulses per turn encoder must be multiplied by the reduction of the motor to obtain the pulses per turn that the motor will give.
+
 
 ### Driver
 
@@ -30,7 +41,7 @@ The driver is [LB1938FA](https://www.dropbox.com/s/l5har1ai8nknbxs/LB1938FA.pdf?
 
 ### Software
 
- ![](./roseco/tree/main/Electronics/pictures/detail_servo_01.png)
+ ![](./Electronics/pictures/detail_servo_01.png)
  
  **Detail of the motor control board** 
 
