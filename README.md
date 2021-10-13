@@ -29,21 +29,21 @@ The 12 pulses per turn encoder must be multiplied by the reduction of the motor 
 
 ## Boards and Schematics ##
 
-![](./Electronics/board/board_0.png)
+![](./Electronics/pictures/board_0.png)
 **ServoMotor board in Eagle**
 
-![](./Electronics/board/sch_0.png)
+![](./Electronics/pictures/sch_0.png)
 **ServoMotor schematic in Eagle** 
 
 ## Electronics  
 
 [PIC16F1503](http://ww1.microchip.com/downloads/en/DeviceDoc/40001607D.pdf) 14 pin Flash, 8 bit microcontroller, 16Mhz internal Oscillator, 2Kwords linear program, 128 data SDRAM, 8 Analog to Digital converter at 10 bit resolution, 4 PWM, 3 Timers, I2C/SPI.
 
-![](./Electronics/board/pic16f1503.png)
+![](./Electronics/pictures/pic16f1503.png)
 
 
 
-![](./Electronics/board/pic16f1503_b.png)
+![](./Electronics/pictures/pic16f1503_b.png)
 
 
 
@@ -57,7 +57,7 @@ The driver is [LB1938FA](https://www.dropbox.com/s/l5har1ai8nknbxs/LB1938FA.pdf?
 
 ####
 
-### Software
+### Software ###
 
  ![](./Electronics/pictures/detail_servo_01.png)
  
@@ -65,7 +65,7 @@ The driver is [LB1938FA](https://www.dropbox.com/s/l5har1ai8nknbxs/LB1938FA.pdf?
 
 The same board can serve different purposes, for example, in the robotic arm we need positioning and hold, while the Eco\_robot we are interested in speed. For this reason and everything that the program is going to be very similar we will have to make different versions. Or group them all in one, although I am afraid that the memory of the PI16f1503 (2Kwords) is not going to give that much.
 
-The encoder gives 12 points per turn, which must be multiplied by the reduction to know how many pulses per turn they give.
+
 
 ![](./Electronics/pictures/boards.jpg)
 
