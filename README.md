@@ -24,8 +24,13 @@ The I2c address will depend on the application that we are going to make, it sho
 |Servo_right      | position |   0x34  |       0x1A      |
 
 
-The 12 pulses per turn encoder must be multiplied by the reduction of the motor to obtain the pulses per turn that the motor will give.
+The 12 pulses per turn encoder must be multiplied by the reduction of the motor to obtain the pulses per turn that the motor will give.For example in the case of reduction 100:1 the servoMotor needs 1200 pulses to complete a lap. 
 
+![](./Electronics/board/board_0.png)
+**ServoMotor board in Eagle**
+
+![](./Electronics/board/sch_0.png)
+**ServoMotor schematic in Eagle** 
 
 ### Driver
 
