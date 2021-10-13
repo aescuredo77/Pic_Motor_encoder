@@ -66,7 +66,7 @@ The driver is [LB1938FA](https://www.dropbox.com/s/l5har1ai8nknbxs/LB1938FA.pdf?
 
 If you need more powerful motors or those that require a greater workload, there is a version of these servos with an independent power supply from the motors.
 
-## Sotware ##
+## Sottware ##
 
 The "/Electronics/src/" folder contains the versions of the PIC program for operating the  left/right servoMotor. Different programs are needed because the motors are reversed. We can use this program for any application, gripper or servoPosition or continuous servo. 
 
