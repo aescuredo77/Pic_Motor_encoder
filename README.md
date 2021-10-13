@@ -69,4 +69,6 @@ If you need more powerful motors or those that require a greater workload, there
 
 ## Sotware ##
 
+The "/Electronics/src/" folder contains the versions of the PIC program for operating the  left/right servoMotor. Different programs are needed because the motors are reversed. We can use this program for any application, gripper or servoPosition or continuous servo. 
 
+To use it in both arduino and teensy or similar, a library has been made in c++ that is in the arduino folder.  
