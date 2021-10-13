@@ -1,5 +1,7 @@
 # Pic_Motor_encoder
-I2C controlled servo
+The  I2C ServoMotor can serve different purposes, for example, like servo that we need positioning and hold, while the diffrobot we are interested in speed. For this reason and everything that the program is going to be very similar we will have to make different versions. 
+
+
 ![](./Electronics/pictures/detail_servo_00.png)
  
  **ServoMotor detail of the interior circuit** 
@@ -49,24 +51,22 @@ The 12 pulses per turn encoder must be multiplied by the reduction of the motor 
 
 The driver is [LB1938FA](https://www.dropbox.com/s/l5har1ai8nknbxs/LB1938FA.pdf?dl=0), It is a driver configured in H-bridge that allows us to control the motor in speed and direction with only two inputs. Analyzing the driver that the DFRobot servomotors carry, the L9110S looks for alternatives because the aforementioned driver is a little out of print or is only sold on pages of doubtful reliability.
 
- ![](./roseco/tree/main/Electronics/pictures/detail_driver_00.png)
+ ![](./Electronics/pictures/detail_driver_00.png)
 
  **LB1938FA is the cousin of the L9110S carried by Dfrobotics servos.** 
 
-#### The inputs IN1 and IN2 of the driver are the RC5 and RC3 outputs of the PIC16f1503 respectively that can operate as PWM1 and PWM2.
 
-####
-
-### Software ###
 
  ![](./Electronics/pictures/detail_servo_01.png)
  
  **Detail of the motor control board** 
 
-The same board can serve different purposes, for example, in the robotic arm we need positioning and hold, while the Eco\_robot we are interested in speed. For this reason and everything that the program is going to be very similar we will have to make different versions. Or group them all in one, although I am afraid that the memory of the PI16f1503 (2Kwords) is not going to give that much.
-
-
+#### Note: For a Diffrobot model the motor on the right is mounted in the opposite direction from that on the left. The micrometal motor gearboxes are not symmetrical. In this way we equalize the mechanical behavior. #### 
 
 ![](./Electronics/pictures/boards.jpg)
 
 If you need more powerful motors or those that require a greater workload, there is a version of these servos with an independent power supply from the motors.
+
+## Sotware ##
+
+
